@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">5Ariketa</string>
+    <string name="titulo">Gorputz Gantzaren Indizearen Kalkulagailua</string>
+    <string name="pisua">Pisua (kg)</string>
+    <string name="altuera">Altuera (cm)</string>
+    <string name="adina">Adina (urteak)</string>
+    <string name="sexua">Sexua (g = gizona, e = emakumea)</string>
+    <string name="gmi_emaitza">GMI (IMC): %1$s</string>
+    <string name="ggi_emaitza">GGI: %1$s %%</string>
 </resources>
