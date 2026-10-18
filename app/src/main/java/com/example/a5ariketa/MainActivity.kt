@@ -90,7 +90,7 @@ fun GGIKalkulua(modifier: Modifier = Modifier) {
             verticalArrangement = Arrangement.spacedBy(12.dp)
         ) {
             Text(
-                text = stringResource(R.string.titulo),
+                text = "Gorputz Gantzaren Indizearen Kalkulagailua",
                 fontSize = 24.sp,
                 color = Color.White,
                 textAlign = TextAlign.Center,
@@ -100,7 +100,7 @@ fun GGIKalkulua(modifier: Modifier = Modifier) {
             TextField(
                 value = pisua,
                 onValueChange = { pisua = it },
-                label = { Text(stringResource(R.string.pisua)) },
+                label = { Text("Pisua (kg)") },
                 keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Decimal),
                 modifier = Modifier.fillMaxWidth()
             )
@@ -108,7 +108,7 @@ fun GGIKalkulua(modifier: Modifier = Modifier) {
             TextField(
                 value = altuera,
                 onValueChange = { altuera = it },
-                label = { Text(stringResource(R.string.altuera)) },
+                label = { Text("Altuera (cm)") },
                 keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
                 modifier = Modifier.fillMaxWidth()
             )
@@ -116,7 +116,7 @@ fun GGIKalkulua(modifier: Modifier = Modifier) {
             TextField(
                 value = adina,
                 onValueChange = { adina = it },
-                label = { Text(stringResource(R.string.adina)) },
+                label = { Text("Adina (urteak)") },
                 keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
                 modifier = Modifier.fillMaxWidth()
             )
@@ -124,24 +124,18 @@ fun GGIKalkulua(modifier: Modifier = Modifier) {
             TextField(
                 value = sexua,
                 onValueChange = { sexua = it },
-                label = { Text(stringResource(R.string.sexua)) },
+                label = { Text("Sexua (g = gizona, e = emakumea)") },
                 modifier = Modifier.fillMaxWidth()
             )
 
             Text(
-                text = stringResource(
-                    R.string.gmi_emaitza,
-                    if (gmi != null) "%.2f".format(gmi) else "-"
-                ),
+                text = "GMI (IMC): " + (if (gmi != null) "%.2f".format(gmi) else "-"),
                 fontSize = 20.sp,
                 color = Color.White
             )
 
             Text(
-                text = stringResource(
-                    R.string.ggi_emaitza,
-                    if (ggi != null) "%.2f".format(ggi) else "-"
-                ),
+                text = "GGI: " + (if (ggi != null) "%.2f".format(ggi) else "-") + " %",
                 fontSize = 20.sp,
                 color = Color.White
             )
